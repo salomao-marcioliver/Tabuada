@@ -3,7 +3,9 @@ const list = (req, res) => {
 }
 
 const tabuada = (req, res) => {
-    res.render('tabuada/tabuada')
+    res.render('tabuada/tabuada', {
+        num: req.params.num
+    })
 }
 
 module.exports = { list, tabuada }

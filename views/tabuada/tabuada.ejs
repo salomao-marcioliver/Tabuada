@@ -1,11 +1,15 @@
 <%- include('../partials/header') %>
 
       <div class="starter-template">
-        <h1>Tabuada do num 1</h1>
+        <h1>Tabuada do número <%= num %></h1>
         <ul>
-            <% for(let i=1; i <= 100; i++){ %>
-                <li><a href="/tabuadas/do/<%= i %>">Tabuada do <%= i %></a></li>
+          <table>
+            <% for(let i=0; i<= 100; i++){ %>
+            <tr>
+              <td><%= num %></td><td> X </td><td><%= (num*i) %></td>
+            </tr>
             <% } %>
+          </table>
         </ul>
       </div>
 
